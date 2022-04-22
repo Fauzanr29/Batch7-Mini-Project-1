@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+        nav{
+            border-bottom: 1px solid black;
+        }
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover .card-img-overlay {
+            opacity: 1;
+        }
+
+        p {
+            text-align: justify;
+        }
+        
+        /* If the screen size is smaller than 1200px, set the font-size to 80px */
+        @media (max-width: 1199.98px) {
+            .card-title {
+                font-size: 15px;
+            }
+            .card-text{
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="container">
+            <div class="row-cols-sm-5 border d-flex justify-content-center">
+                <img class="img-fluid" src="./Assets/horizontal_on_white_by_logaster.png" alt="Responsive image">
+                <!-- <h1 class="text-center">LOGO</h1> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                    </svg>
+                    Home
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./top_anime.html">Top Anime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./About-us.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Container Content -->
+    <div class="container-fluid" id="container-content">
+        <div class="container" id="left-container">
+            <!-- Card List -->
+            <div class="row">
+                <div class="alert alert-success my-2" role="alert">
+                    Welcome to Firumu-ku.com
+                </div>
+                <div class="col-12 py-3">
+                    <h5>
+                        <small>Hot Movies</small>
+                    </h5>
+                    <hr class="divider">
+                </div>
+
+                <!-- Carousel -->
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./Assets/Carousel/wallpaperflare.com_wallpaper-1.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-white fw-bold">The Wind Rises</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./Assets/Carousel/wallpaperflare.com_wallpaper-2.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-primary fw-bold">Weathering with You</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./Assets/Carousel/wallpaperflare.com_wallpaper.jpg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="text-dark fw-bold">Howl's Moving Castle</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Content -->
+                <!-- News -->
+                <div class="row">
+                    <div class="col-12 py-3">
+                        <h5>
+                            <small>News Today</small>
+                        </h5>
+                        <hr class="divider">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-4 p-2">
+                            <div class="card">
+                                <img src="./Assets/20220412_n-ko.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Netflix's Official V-tuber N-ko tries out MAL!</h5>
+                                    <p class="card-text">Published: Mar 11, 2022 <br> Updated: Mar 11, 2022</p>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 p-2 rounded">
+                            <div class="card">
+                                <img src="./Assets/20220421_TR.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Tokyo Revengers List Designs 2022</h5>
+                                    <p class="card-text">Published: Apr 21, 2022 <br>Updated: Apr 21, 2022 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 p-2 rounded">
+                            <div class="card">
+                                <img src="./Assets/yearbook.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">MAL Anime Nomination 2021/2022</h5>
+                                    <p class="card-text">Published: Jan 21, 2022 <br>Updated: March 21, 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anime card-list -->
+                <!-- Recommended Anime -->
+                <div class="row py-3">
+                    <div class="col-12-py-3">
+                        <h5>
+                            <small>Recommended Anime</small>
+                        </h5>
+                        <hr class="divider">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Koi-wa">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/120593l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Koi wa Sekai Seifuku no Ato de</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Otome-game">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/121462l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Otome Game Sekai wa Mob ni Kibishii Sekai desu</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Shijou-saikyou">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/120095l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Shijou Saikyou no Daimaou, Murabito A ni Tensei suru</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Gaikotsu-kishi">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/120706l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Tomodachi-game">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/121345l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Tomodachi Game</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Date-a-life">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/121295l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Date A Live IV</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Aharen-san">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/120636l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Aharen-san wa Hakarenai</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Komi-san">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/121163l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Komi-san wa, Comyushou desu. 2nd Season</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#TateYuusha">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/121873l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Tate no Yuusha no Nariagari Season 2</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#YuushaYamemasu">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/121079l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Yuusha, Yamemasu</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#Kaguya">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/122627l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Kaguya-sama wa Kokurasetai: Ultra Romantic</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 p-2" style="cursor: pointer;" data-bs-toggle="modal"
+                            data-bs-target="#spyXFams">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="./Assets/anime_recommended/122795l.jpg" alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Spy x Family</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Anime -->
+                <div class="row py-3">
+                    <div class="col-12-py-3">
+                        <h5>
+                            <small>Upcoming Anime</small>
+                        </h5>
+                        <hr class="divider">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 p-3">
+                            <div class="card bg-dark text-white" style="cursor: pointer;" data-bs-toggle="modal"
+                                data-bs-target="#utawarerumono-zan2">
+                                <img class="card-img"
+                                    src="./Assets/anime_upcoming/119655.jpg"
+                                    alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Utawarerumono: Futari no Hakuoro</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 p-3">
+                            <div class="card bg-dark text-white" style="cursor: pointer;" data-bs-toggle="modal"
+                                data-bs-target="#hataraku-mao2">
+                                <img class="card-img"
+                                    src="./Assets/anime_upcoming/113307.jpg"
+                                    alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Hataraku Maou-sama! 2nd Season</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 p-3">
+                            <div class="card bg-dark text-white" style="cursor: pointer;" data-bs-toggle="modal"
+                                data-bs-target="#Danmachi-IV">
+                                <img class="card-img"
+                                    src="./Assets/anime_upcoming/120373.jpg"
+                                    alt="Card image">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end text-center">
+                                    <h5 class="card-title">Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka IV</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted">
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5 border-top">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>About
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4 text-center">
+                                Contact Us
+                            </h6>
+
+                            <form action="">
+                                <div>
+                                    <label for="nama"></label>
+                                    <input type="text" name="nama" placeholder="input your name">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="mail"></label>
+                                    <input type="email" name="mail" id="" placeholder="@mail.com">
+                                </div>
+                                <br>
+                                <div>
+                                    <label for="comments"></label>
+                                    <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <br>
+                                <div>
+                                    <button type="submit" class="btn btn-primary">
+                                        Submit
+                                    </button>
+                                </div>
+                                <br>
+                            </form>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2022 Copyright:
+                <a class="text-reset fw-bold" href="#">Firumu-ku.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="spyXFams" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/119538l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Spy x Family</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 9, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/858/Wit_Studio">Wit
+                                                    Studio,</a>
+                                                <a href="https://myanimelist.net/anime/producer/1835/CloverWorks">
+                                                    CloverWorks</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    For the agent known as "Twilight," no order is too tall if it is for
+                                    the sake of peace. Operating as Westalis' master spy, Twilight works
+                                    tirelessly to prevent extremists from sparking a war with
+                                    neighboring country Ostania. For his latest mission, he must
+                                    investigate Ostanian politician Donovan Desmond by infiltrating his
+                                    son's school: the prestigious Eden Academy. Thus, the agent faces
+                                    the most difficult task of his career: get married, have a child,
+                                    and play family.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Kaguya" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/122627l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Kaguya-sama wa Kokurasetai: Ultra Romantic</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 9, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/17/Aniplex">Aniplex
+                                                    Studio,</a>
+                                                <a href="https://myanimelist.net/anime/producer/1365/Shueisha">
+                                                    Shueisha</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    Third season of Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="YuushaYamemasu" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/121079l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Yuusha, Yamemasu</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 5, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/238/AT-X">AT-X
+                                                    Studio,</a>
+                                                <a href="https://myanimelist.net/anime/producer/464/flying_DOG">
+                                                    Flying Dog</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    After saving the world, the strongest hero Leo became someone who is not wanted in
+                                    the peaceful human world. He was too strong. Exiled, he seeks a job at the Demon
+                                    King's Army, which he had defeated and needs to be rebuilt.
+                                </p>
+                                <p>
+                                    The Army had many problems: too much work, financial troubles, etc. Leo starts to
+                                    make things better using his power. Leo encounters Echidna again, and asks her why
+                                    she invaded the human world. There was an unexpected story...!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="TateYuusha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/102902l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Tate no Yuusha no Nariagari Season 2</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 13</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 6, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/290/Kinema_Citrus">Kinema
+                                                    Citrus,</a>
+                                                <a href="https://myanimelist.net/anime/producer/1575/DR_Movie">
+                                                    DR Movie</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    Second season of Tate no Yuusha no Nariagari.
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Komi-san" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/121163l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Komi-san wa, Comyushou desu. 2nd Season</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 7, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/28/OLM">OLM</a>
+
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    Second season of Komi-san wa, Comyushou desu..
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Aharen-san" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/116837l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Aharen-san wa Hakarenai</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: Unknown</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Genre</th>
+                                            <td>: Comedy</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 2, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/1440/Felix_Film">Felix
+                                                    Film</a>
+
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    Reina Aharen, a small and cute student with a quiet voice, is quite bad at
+                                    determining distance and personal space. Sometimes she's inches away from your face,
+                                    and at other times, miles too far! The only one who tries to understand her antics
+                                    is Raidou Matsuboshi, who is seated beside her in class. He has a menacing face, but
+                                    in reality, he is a kind boy with an imagination that can run wild at times.
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Date-a-life" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/113334l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Date A Live IV</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Genre</th>
+                                            <td>: Comedy, Romance, Sci-fi</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 8, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/1857/GEEK_TOYS">Geek
+                                                    Toys</a>
+
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    Fourth season of Date A Live.
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Tomodachi-game" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/119153l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Tomodachi Game</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Genre</th>
+                                            <td>: Psychological thriller</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 6, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/2037/Okuruto_Noboru">Okuruto
+                                                    Noboru</a>
+
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    Yuuichi Katagiri has battled financial hardships his whole life but has learned to
+                                    stay content and positive thanks to his close circle of friends. To keep a promise
+                                    he made to them, Yuuichi saves up enough money to join them on the school trip. But
+                                    when the gathered money mysteriously goes missing, suspicion falls on two of
+                                    Yuuichi's friends: Shiho Sawaragi and Makoto Shibe, who were in charge of collecting
+                                    the payments. Although innocent, Shiho and Makoto take responsibility for the
+                                    failure to protect the money when no one else comes forward.
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Gaikotsu-kishi" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/122802l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Genre</th>
+                                            <td>: Isekai</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 7, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/1997/Studio_Kai">Studio
+                                                    Kai</a>
+                                                <a
+                                                    href="https://myanimelist.net/anime/producer/2097/HORNETS">HORNETS</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    One day, a gamer played video games until he fell asleep...and when he woke up, he
+                                    found himself in the game world—as a skeleton! Equipped with the powerful weapons
+                                    and armor of his avatar but stuck with its frightening skeletal appearance, Arc has
+                                    to find a place for himself in this new, fantastical land. All his hopes for a quiet
+                                    life are dashed when he crosses paths with a beautiful elven warrior, setting him on
+                                    a journey full of conflict and adventure.
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Shijou-saikyou" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/117779l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Shijou Saikyou no Daimaou, Murabito A ni Tensei suru</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Genre</th>
+                                            <td>: Action, Fantasy</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 6, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/300/SILVER_LINK">Silver
+                                                    Link</a>
+                                                <a href="https://myanimelist.net/anime/producer/1547/Blade">Blade</a>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    As the most powerful entity of all time, the Demon Lord Varvatos thinks life is a
+                                    big fat snore. When he takes matters into his own hands and decides to reincarnate,
+                                    he calibrates his magical strength to be perfectly average. But there is no way he
+                                    could have predicted that everyone in the modern world would be weak as hell, which
+                                    means he is totally overpowered once again! Reborn under the name Ard, he has ladies
+                                    fawning over him, the royal family begging him to become the next king, and an
+                                    ex-minion insisting on killing him?! But Ard has a one-track mind, and he won't stop
+                                    at anything to achieve his ultimate goal!
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Otome-game" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/121121l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Otome Game Sekai wa Mob ni Kibishii Sekai desu</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Genre</th>
+                                            <td>: Fantasy, Romance</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 3, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/1974/ENGI">ENGI</a>
+
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    Office worker Leon is reincarnated into a particularly punishing dating sim video
+                                    game, where women reign supreme and only beautiful men have a seat at the table. But
+                                    Leon has a secret weapon: he remembers everything from his past life, which includes
+                                    a complete playthrough of the very game in which he is now trapped. Watch Leon spark
+                                    a revolution to change this new world in order to fulfill his ultimate desire... of
+                                    living a quiet, easy life in the countryside!
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="Koi-wa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg d-flex">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Anime Information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./Assets/anime_recommended/117531l.jpg" class="img-fluid" alt=""
+                                    width="95%" />
+                            </div>
+
+                            <div class="col-6">
+                                <h4 class="fw-bold">Koi wa Sekai Seifuku no Ato de</h4>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>: Tv</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Episodes</th>
+                                            <td>: 12</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Genre</th>
+                                            <td>: Comedy, Romance</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Status</th>
+                                            <td>: Currently Airing</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Aired</th>
+                                            <td>: Apr 8, 2022 to ?</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Premiere</th>
+                                            <td>: Spring 2022</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Studio</th>
+                                            <td>:
+                                                <a href="https://myanimelist.net/anime/producer/439/Project_No9">Project
+                                                    No.9</a>
+
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Sinopsis</th>
+                                            <td>:
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>
+                                    In the eyes of the public, Fudou Aikawa and Desumi Magahara are sworn enemies who
+                                    have nothing in common. Fudou, also known as "Red Gelato," is the leader of the hero
+                                    squadron "Gelato 5," whose mission is to bring about world peace. On the other hand,
+                                    Desumi is the minion leader of "Gecko," a villainous organization seeking world
+                                    domination. However, despite these differences, their relationship is not quite what
+                                    it seems. When they are not making a show of being at each other's throats, Desumi
+                                    and Fudou continue to pursue a forbidden love.
+                                </p>
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
